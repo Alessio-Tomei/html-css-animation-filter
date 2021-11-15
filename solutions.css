@@ -1,0 +1,283 @@
+/* Esercizio 1 */
+
+.ex-1-square{
+    transition: all 2s ease 0s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+/* Fine es 1 */
+
+/* Esercizio 2 */
+
+.ex-2-square{
+    transition: all 2s ease 0s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+/* Fine es 2 */
+
+/* Esercizio 3 */
+
+.ex-3-square{
+    transition: all 1s ease 0s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+/* Fine es 3 */
+
+/* Esercizio 4 */
+
+.ex-4-square{
+    transition: all 1s ease 0s;
+}
+
+.ex-4-square:hover{
+    /* opacity: 0; */
+    background-color: transparent;
+}
+
+/* Fine es 4 */
+
+
+/* Esercizio 5 */
+
+.ex-5-square{
+    transition: all 2s ease 0s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+}
+
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+/* Fine es 5 */
+
+/* Esercizio 6 */
+
+.ex-6-img{
+    transition: all 0s ease 0s;
+}
+
+.ex-6-img:hover{
+    filter: grayscale();
+}
+
+/* Fine es 6 */
+
+/* Esercizio 7 */
+
+.ex-7-img{
+    transition: all 2s ease 0s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale();
+    filter: sepia(0.7);
+}
+
+/* Fine es 7 */
+
+/* Esercizio 8 */
+
+.ex-8-img{
+    transition: all 2s ease 0s;
+}
+
+.ex-8-img:hover{
+    filter: grayscale();
+    filter: sepia(0.7);
+    border-radius: 20px;
+}
+
+/* Fine es 8 */
+
+/* Esercizio 9 */
+
+.ex-9-img{
+    transition: all 2s ease 0s;
+}
+
+.ex-9-img:hover{
+    filter: grayscale();
+    filter: sepia(0.7);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+/* Fine es 9 */
+
+/* Esercizio 10 */
+
+.ex-10-icon{
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0turn);
+    }
+    25%{
+        transform: rotate(0.25turn);
+    }
+    50%{
+        transform: rotate(0.5turn);
+    }
+    75%{
+        transform: rotate(0.75turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+/* Fine es 10 */
+
+/* Esercizio 11 */
+
+.ex-11-icon:hover{
+    animation-name: loading-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes loading-2 {
+    0%{
+        transform: rotate(0turn);
+    }
+    25%{
+        transform: rotate(0.25turn);
+    }
+    50%{
+        transform: rotate(0.5turn);
+    }
+    75%{
+        transform: rotate(0.75turn);
+    }
+    100%{
+        transform: rotate(0turn);
+    }
+}
+
+/* Fine es 11 */
+
+/* Esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: semi-turn-alternate-top;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+
+}
+
+@keyframes semi-turn-alternate-top {
+    100%{
+        position: absolute;
+        top: -10px;
+        left: calc(100% - 63px);
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: semi-turn-alternate-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes semi-turn-alternate-bottom {
+    50%{
+        right: calc(100% - 63px);
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+/* Fine es 12 */
+
+/* Esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: rotation-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation-top {
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+    20%{
+        top: -10px;
+        left: 90%;
+    }
+    40%{
+        top: 100%;
+        left: 90%;
+    }
+    60%{
+        top: 100%;
+        left: -10px;
+    }
+    80%{
+        top: -10px;
+        left: -10px;
+    }
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: rotation-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation-bottom {
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+    20%{
+        bottom: -10px;
+        right: 75%;
+    }
+    40%{
+        bottom: 100%;
+        right: 75%;
+    }
+    60%{
+        bottom: 100%;
+        right: -10px;
+    }
+    80%{
+        bottom: -10px;
+        right: -10px;
+    }
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
+/* Fine es 13 */
